@@ -25,7 +25,7 @@ function timeParse(timeParseDate){
     }
     return timeParseDate;
 }
-function isLeapYear(isLeapYearDate){
+function isLeapYear(isLeapYearDate=timeArray()[0]){
     return ((isLeapYearDate%4===0&&isLeapYearDate%100!==0)||(isLeapYearDate%400===0))?true:false;
 }
 function passDay(passDaydate=timeArray()){
@@ -87,6 +87,3 @@ function timeDiff(date1,date2=timeArray()){
     }       
      return Math.abs(timeDiffcount);
 }
-
-var now = timeArray();
-console.log(now);
