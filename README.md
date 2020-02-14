@@ -1,38 +1,36 @@
 # dateProcess.js
-README [中文](中文) | [English](English)
+README [中文](#中文) | [English](#English)
 ---
 [![](https://img.shields.io/badge/CDN-cdnLink-brightgreen.svg)](http://files.qianduan.ltd/dateProcess.min.1.1.js)
-[![](https://img.shields.io/badge/blog-@myblog-important.svg)](http://files.qianduan.ltd/dateProcess.min.1.1.js)
-[![](https://img.shields.io/badge/docs-@docsCsdn-blue.svg)](http://files.qianduan.ltd/dateProcess.min.1.1.js)
+[![](https://img.shields.io/badge/blog-@myblog-important.svg)](http://www.xxrsblog.cn)
+[![](https://img.shields.io/badge/docs-@docsCsdn-blue.svg)](http://www.xxrsblog.cn)
 ## 中文
 
 ### 一、插件介绍
 javascript多功能时间插件，包括日期差计算、时间格式处理、某个日期在当时年份过了多少天、还剩多少天等有趣的功能 :stuck_out_tongue_winking_eye:
 ### 二、调用方法
 ```
-:stuck_out_tongue_winking_eye: dateProcess.min.1.1.js
+> dateProcess.min.1.1.js
 <script src="http://files.qianduan.ltd/dateProcess.min.1.1.js"></script>
 
-:stuck_out_tongue_winking_eye: dateProcess.1.1.js
+> dateProcess.1.1.js
 <script src="http://files.qianduan.ltd/dateProcess.1.1.js"></script>
 ```
 ### 三、说明文档
 ### 目录
+
 ---
-- [dateProcess.js](#dateprocessjs)
-  - [README 中文 | [English](English)](#readme-%e4%b8%ad%e6%96%87--english)
-  - [中文](#%e4%b8%ad%e6%96%87)
-    - [一、插件介绍](#%e4%b8%80%e6%8f%92%e4%bb%b6%e4%bb%8b%e7%bb%8d)
-    - [二、调用方法](#%e4%ba%8c%e8%b0%83%e7%94%a8%e6%96%b9%e6%b3%95)
-    - [三、说明文档](#%e4%b8%89%e8%af%b4%e6%98%8e%e6%96%87%e6%a1%a3)
-  - [### 目录](#h3-id%22e79baee5bd95-693%22%e7%9b%ae%e5%bd%95h3)
-  - [### 内容](#h3-id%22e58685e5aeb9-684%22%e5%86%85%e5%ae%b9h3)
-      - [1. 返回当前时间的数组格式](#1-%e8%bf%94%e5%9b%9e%e5%bd%93%e5%89%8d%e6%97%b6%e9%97%b4%e7%9a%84%e6%95%b0%e7%bb%84%e6%a0%bc%e5%bc%8f)
-      - [2. 返回指定时间的时间差](#2-%e8%bf%94%e5%9b%9e%e6%8c%87%e5%ae%9a%e6%97%b6%e9%97%b4%e7%9a%84%e6%97%b6%e9%97%b4%e5%b7%ae)
-      - [3. 返回今年过了多少天](#3-%e8%bf%94%e5%9b%9e%e4%bb%8a%e5%b9%b4%e8%bf%87%e4%ba%86%e5%a4%9a%e5%b0%91%e5%a4%a9)
-      - [4. 返回今年还剩多少天](#4-%e8%bf%94%e5%9b%9e%e4%bb%8a%e5%b9%b4%e8%bf%98%e5%89%a9%e5%a4%9a%e5%b0%91%e5%a4%a9)
-      - [5 今年是闰年还是平年？](#5-%e4%bb%8a%e5%b9%b4%e6%98%af%e9%97%b0%e5%b9%b4%e8%bf%98%e6%98%af%e5%b9%b3%e5%b9%b4)
-      - [6 将/划分的日期字符串转换成数组](#6-%e5%b0%86%e5%88%92%e5%88%86%e7%9a%84%e6%97%a5%e6%9c%9f%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e6%88%90%e6%95%b0%e7%bb%84)
+[1. 返回当前时间的数组格式](#1-%e8%bf%94%e5%9b%9e%e5%bd%93%e5%89%8d%e6%97%b6%e9%97%b4%e7%9a%84%e6%95%b0%e7%bb%84%e6%a0%bc%e5%bc%8f)
+
+[2. 返回指定时间的时间差](#2-%e8%bf%94%e5%9b%9e%e6%8c%87%e5%ae%9a%e6%97%b6%e9%97%b4%e7%9a%84%e6%97%b6%e9%97%b4%e5%b7%ae)
+
+[3. 返回今年过了多少天](#3-%e8%bf%94%e5%9b%9e%e4%bb%8a%e5%b9%b4%e8%bf%87%e4%ba%86%e5%a4%9a%e5%b0%91%e5%a4%a9)
+
+[4. 返回今年还剩多少天](#4-%e8%bf%94%e5%9b%9e%e4%bb%8a%e5%b9%b4%e8%bf%98%e5%89%a9%e5%a4%9a%e5%b0%91%e5%a4%a9)
+
+[5 今年是闰年还是平年？](#5-%e4%bb%8a%e5%b9%b4%e6%98%af%e9%97%b0%e5%b9%b4%e8%bf%98%e6%98%af%e5%b9%b3%e5%b9%b4)
+
+[6 将/划分的日期字符串转换成数组](#6-%e5%b0%86%e5%88%92%e5%88%86%e7%9a%84%e6%97%a5%e6%9c%9f%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%bd%ac%e6%8d%a2%e6%88%90%e6%95%b0%e7%bb%84)
 ### 内容
 ---
 #### 1. 返回当前时间的数组格式
