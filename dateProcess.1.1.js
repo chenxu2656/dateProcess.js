@@ -87,3 +87,6 @@ function timeDiff(date1,date2=timeArray()){
     }       
      return Math.abs(timeDiffcount);
 }
+
+var now = timeArray();
+console.log(now);
