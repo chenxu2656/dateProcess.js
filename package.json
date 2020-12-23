@@ -1,0 +1,22 @@
+{
+  "name": "dateprocess",
+  "version": "1.0.0",
+  "description": "README [中文](#中文) | [English](#English)\r ---\r [![](https://img.shields.io/badge/CDN-cdnLink-brightgreen.svg)](http://files.qianduan.ltd/dateProcess.min.1.1.js)\r [![](https://img.shields.io/badge/blog-@myblog-important.svg)](http://www.xxrsblog.cn)\r [![](https://img.shields.io/badge/docs-@docsCsdn-blue.svg)](http://www.xxrsblog.cn)\r ## 中文",
+  "main": "calendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenxu2656/DateProcess.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenxu2656/DateProcess.js/issues"
+  },
+  "homepage": "https://github.com/chenxu2656/DateProcess.js#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
